@@ -27,29 +27,29 @@ function playRound(humanChoice, computerChoice){
     if(humanChoice !== "rock" && humanChoice !== "paper" && humanChoice !== "scissors"){
         alert("Invalid answer");
     } else if(humanChoice === "rock" && computerChoice == "rock") {
-        alert(`It's a tie! You both chose ${humanChoice}`);
+        alert(`It's a tie! You both chose ${humanChoice}\nScoreboard:\nYou: ${humanScore}\nComputer: ${computerScore}`);
     } else if (humanChoice === "rock" && computerChoice === "paper"){
-        alert(`You lose! ${computerChoice} beats ${humanChoice}`);
-        computerScore++;
+        ++computerScore;
+        alert(`You lose! ${computerChoice} beats ${humanChoice}\nScoreboard:\nYou: ${humanScore}\nComputer: ${computerScore}`);
     } else if (humanChoice === "rock" && computerChoice === "scissors"){
-        alert(`You won! ${humanChoice} beats ${computerChoice}`);
-        humanScore++;
+        ++humanScore;
+        alert(`You won! ${humanChoice} beats ${computerChoice}\nScoreboard:\nYou: ${humanScore}\nComputer: ${computerScore}`);     
     } else if(humanChoice === "paper" && computerChoice == "rock") {
-        alert(`You won! ${humanChoice} beats ${computerChoice}`);
-        humanScore++;
+        ++humanScore;
+        alert(`You won! ${humanChoice} beats ${computerChoice}\nScoreboard:\nYou: ${humanScore}\nComputer: ${computerScore}`);     
     } else if(humanChoice === "paper" && computerChoice == "paper") {
-        alert(`It's a tie! You both chose ${humanChoice}`);
+        alert(`It's a tie! You both chose ${humanChoice}\nScoreboard:\nYou: ${humanScore}\nComputer: ${computerScore}`);
     } else if(humanChoice === "paper" && computerChoice == "scissors") {
-        alert(`You lose! ${computerChoice} beats ${humanChoice}`);
-        computerScore++;
+        ++computerScore;
+        alert(`You lose! ${computerChoice} beats ${humanChoice}\nScoreboard:\nYou: ${humanScore}\nComputer: ${computerScore}`); 
     } else if(humanChoice === "scissors" && computerChoice == "rock") {
-        alert(`You lose! ${computerChoice} beats ${humanChoice}`);
-        computerScore++;
+        ++computerScore;
+        alert(`You lose! ${computerChoice} beats ${humanChoice}\nScoreboard:\nYou: ${humanScore}\nComputer: ${computerScore}`);     
     } else if(humanChoice === "scissors" && computerChoice == "paper") {
-        alert(`You won! ${humanChoice} beats ${computerChoice}`);
-        humanScore++;
+        ++humanScore;
+        alert(`You won! ${humanChoice} beats ${computerChoice}\nScoreboard:\nYou: ${humanScore}\nComputer: ${computerScore}`);
     } else if(humanChoice === "scissors" && computerChoice == "scissors") {
-        alert(`It's a tie! You both chose ${humanChoice}`);
+        alert(`It's a tie! You both chose ${humanChoice} \nScoreboard:\nYou: ${humanScore}\nComputer: ${computerScore}`);
     }
 }
 
