@@ -16,7 +16,16 @@ function getComputerChoice(){
 
 function getHumanChoice(){
     humanChoice = prompt("Type Rock, Paper, Scissors");
-    if(humanChoice !== "Rock" || humanChoice !== "Paper" || humanChoice !== "Scissors") {
+    humanChoice.toLowerCase();
+    if(humanChoice !== "rock" || humanChoice !== "paper" || humanChoice !== "scissors") {
         alert("Invalid answer");
     }
 }
+
+function playRound(humanChoice, computerChoice){
+}
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection, computerSelection);
