@@ -66,10 +66,8 @@ while(humanScore < 5 && computerScore < 5) {
     playGame();
 }
 
-if(humanScore = 5){
+if(humanScore == 5){
     alert("You won against the computer!");
-} else  if (computerScore = 5){
+} else {
     alert("You lost against the computer!");
 }
-
-
