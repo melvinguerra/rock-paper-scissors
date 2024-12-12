@@ -2,6 +2,8 @@
 A simple Rock Paper Scissors game
 Plays until 5 rounds
 
+https://melvinguerra.github.io/rock-paper-scissors/
+
 ## Pseudocode
 ```
 Get option from human(rock/paper/scissors)
